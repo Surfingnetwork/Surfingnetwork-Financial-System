@@ -5,9 +5,7 @@ contract Surfnetwork {
     uint private reserve;
     address sur;
     uint amount;
-
     constructor(){}
-
     function init(address _sur) public {
         
         sur = _sur;
