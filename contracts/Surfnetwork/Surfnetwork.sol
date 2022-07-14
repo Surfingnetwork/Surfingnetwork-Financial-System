@@ -7,7 +7,6 @@ contract Surfnetwork {
     uint amount;
     constructor(){}
     function init(address _sur) public {
-        
         sur = _sur;
     }
 
