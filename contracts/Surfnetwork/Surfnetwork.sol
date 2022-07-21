@@ -9,7 +9,6 @@ contract Surfnetwork {
     function init(address _sur) public {
         sur = _sur;
     }
-
     function depositToken(address to,uint month,uint value) external override{
         require(month==0||month==3||month==6||month==12||month==24||month==36,"Deposit month error");
 
