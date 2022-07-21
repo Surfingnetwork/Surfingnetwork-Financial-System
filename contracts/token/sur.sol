@@ -22,3 +22,4 @@ contract sur is ERC20{
         _burn(account, amount);
     }
 }
+
