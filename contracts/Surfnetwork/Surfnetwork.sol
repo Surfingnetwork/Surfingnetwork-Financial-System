@@ -9,6 +9,7 @@ contract Surfnetwork {
     function init(address _sur) public {
         sur = _sur;
     }
+    
     function depositToken(address to,uint month,uint value) external override{
         require(month==0||month==3||month==6||month==12||month==24||month==36,"Deposit month error");
 
@@ -17,6 +18,7 @@ contract Surfnetwork {
         amount=balance-reserve;
         reserve = balance;
     }
+    
     function withdrawa(address to,uint tokenId) external override{
         uint32 blockTime = uint32(block.timestamp % 2 ** 32);
         uint value=amount;
