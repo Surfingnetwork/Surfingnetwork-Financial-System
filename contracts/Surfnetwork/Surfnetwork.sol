@@ -1,7 +1,6 @@
 pragma solidity ^0.8.0;
 import "../interfaces/token20/IERC20.sol";
 import '../lib/TransferHelper.sol';
-
 contract Surfnetwork {
     uint private reserve;
     address sur;
