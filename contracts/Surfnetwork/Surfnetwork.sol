@@ -13,7 +13,6 @@ contract Surfnetwork {
     
     function depositToken(address to,uint month,uint value) external override{
         require(month==0||month==3||month==6||month==12||month==24||month==36,"Deposit month error");
-
         TransferHelper.safeTransferFrom(rbt,to,address(this), value);
         uint balance=IERC20(sur).balanceOf(address(this));
         amount=balance-reserve;
