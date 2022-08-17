@@ -1,6 +1,5 @@
 pragma solidity ^0.8.0;
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-
 contract sur is ERC20{
     address public admin;
     event AdminChange(address indexed Admin, address indexed newAdmin);
